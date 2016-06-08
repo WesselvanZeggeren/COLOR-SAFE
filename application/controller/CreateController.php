@@ -1,5 +1,9 @@
 <?php 
 
+/**
+ * CreateController
+ * users can create their own color here
+ */
 class CreateController extends Controller
 {
 

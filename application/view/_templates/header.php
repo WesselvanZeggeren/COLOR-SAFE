@@ -8,18 +8,7 @@
     </head>
     <body id="body">
         <header>
-            <h1 class="title">
-                <span class="title-letter">C</span>
-                <span class="title-letter">O</span>
-                <span class="title-letter">L</span>
-                <span class="title-letter">O</span>
-                <span class="title-letter">R</span>
-                <span class="title-letter">-</span>
-                <span class="title-letter">S</span>
-                <span class="title-letter">A</span>
-                <span class="title-letter">F</span>
-                <span class="title-letter">E</span>
-            </h1>
+            <a href="<?php echo Config::get('URL'); ?>"><h1 class="title">COLOR-SAFE</h1></a>
 
             <ul class="nav-left">
                 <li><a href="<?php echo Config::get('URL'); ?>" ><button class="nav-button-left nav-button-left-1" >Home Page</button></a></li>
