@@ -1,0 +1,239 @@
+/**
+ * some extra info
+ * calc is mainly used to calibrate some pixel problems like calc(10px + 1px);
+ * with straight numbers like 5 / 10 / 15 ist the most readeble way to 
+ */
+
+/**
+ * Style with * simbol | This isn't the best and fastest for the website but is takes away al lot of pain
+ */
+
+*{
+	outline: none;
+}
+
+/**
+ * Style by Tag name (and some classes just to make it shorter)
+ */
+
+html, body, li, ul, a, header, main, .home-button-box, .home-button{
+	margin: 0;
+	padding: 0;
+}
+
+body, .home-button, .nav-button-right-image{
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: absolute;
+}
+
+main{
+	width: 100%;
+	position: absolute;
+	top: 70px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #0f0f0f;
+	border: none;
+	box-shadow: 0 3px 50px #000000;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	display: inline-block; 
+}
+
+/**
+ * Style by Class name
+ */
+
+/**
+ * Style of the title and its letters
+ */
+
+.title, .nav-button-left, .nav-button-right{
+	margin: 0;
+	color: #dfdfdf;
+	font-family: 'Kanit', sans-serif;
+	font-size: 15px;
+}
+
+.title{
+	display: block;
+	padding: 10px;
+	padding-top: 5px;
+	margin-right: -2px;
+	font-size: 35px;
+	letter-spacing: 2px;
+	/* this is very long i know but otherwise the 3d title effect would look like sh*t xD */
+	text-shadow: 0 0.20px #3f3f3f, 0 0.40px #3f3f3f, 0 0.60px #3f3f3f, 0 0.80px #3f3f3f, 0 1px #3f3f3f, 0 1.20px #3f3f3f, 0 1.40px #3f3f3f, 0 1.60px #3f3f3f, 0 1.80px #3f3f3f, 0 2px #3f3f3f, 0 2.20px #3f3f3f, 0 2.40px #3f3f3f, 0 2.60px #3f3f3f, 0 2.80px #3f3f3f, 0 3px #3f3f3f,  0 3.20px #3f3f3f, 0 3.40px #3f3f3f, 0 3.60px #3f3f3f, 0 3.80px #3f3f3f, 0 4px #3f3f3f, 0 4.20px #3f3f3f, 0 4.40px #3f3f3f, 0 4.60px #3f3f3f, 0 4.80px #3f3f3f, 0 5px #3f3f3f;
+	transition: 0.13s ease transform, 0.09s ease text-shadow; 
+}
+
+.title-letter{
+	margin-right: -16px;
+}
+
+.title-letter:hover{
+	transform: translateY(5px);
+	text-shadow: 0 0 #3f3f3f;
+}
+
+/**
+ * Style of the left nav and its buttons
+ */
+
+.nav-left, .nav-right{
+	position: absolute;
+	top: 0;
+}
+
+.nav-left{
+	left: 240px;
+}
+
+.nav-right{
+	right: 15px;
+}
+
+.nav-button-left{
+	height: 70px;
+	background-color: #0f0f0f;
+	padding: 10px;
+	padding-top: 18px;
+	border: none;
+	border-bottom: 10px solid #0f0f0f;
+	transition: 0.2s linear border-color, 0.2s linear background-color;
+	margin-right: -5px;
+}
+
+.nav-button-left:hover{
+	background-color: #3f3f3f;
+}
+
+.nav-button-left-1:hover{
+	border-color: #2add8c;
+}
+
+.nav-button-left-2:hover{
+	border-color: #059089;
+}
+
+.nav-button-left-3:hover{
+	border-color: #4d1a91;
+}
+
+.nav-button-left-4:hover{
+	border-color: #db20b5;
+}
+
+.nav-button-left-5:hover{
+	border-color: #d43219;
+}
+
+/**
+ * Style of the right nav and its buttons
+ */
+
+.nav-button-right{
+	background-color: #2f2f2f;
+	height: 40px;
+	margin-left: calc(10px + 2px);
+	margin-right: calc(-5px + 1px);
+	margin-top: 12px;
+	border: 3px solid #dfdfdf;
+	box-shadow: 0 6px #3f3f3f;
+	transition: 0.2s ease transform, 0.14s ease box-shadow;
+}
+
+.nav-button-right-normal{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: calc(5px - 1px);
+}
+
+.nav-button-right-image{
+	width: 40px;
+	transform: translateY(12px);
+	margin-top: -12px;
+}
+
+.nav-button-right:hover{
+	transform: translateY(6px);
+	box-shadow: 0 0 #3f3f3f;
+}
+
+.nav-button-right-image:hover{
+	transform: translateY(18px);
+}
+
+/**
+ * Style of the footer and its text
+ */
+
+/**
+ * Style of the Home page
+ */
+
+.button-box{
+	display: inline-block;
+	text-align: center;
+	background-color: #efefef;
+	padding: 10px;
+	width: calc(800px + 28px);
+}
+
+.home-button{
+	background-color: #dfdfdf;
+	height: 200px;
+	width: calc(250px + 1px);
+	border: 5px solid #3f3f3f;
+	margin: 4px;
+	margin-bottom: 15px;
+	box-shadow: 0 7px #2f2f2f;
+	transition: 0.13s ease transform, 0.09s ease box-shadow;
+}
+
+.home-button:hover{
+	transform: translateY(7px);
+	box-shadow: 0px 0px #2f2f2f;
+}
+
+.home-button-1{
+	width: calc(750px + 28px);
+}
+
+.home-button-2{
+	
+}
+
+.home-button-3{
+	
+}
+
+.home-button-4{
+	
+}
+
+.home-button-5{
+	width: calc(750px + 28px);
+}
+
+.home-button-6{
+
+}
+
+.home-button-7{
+	width: calc(750px + 28px);
+	padding-right: 10px;
+}
