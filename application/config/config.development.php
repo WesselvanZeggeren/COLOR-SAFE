@@ -40,6 +40,8 @@ return array(
 	 */
 	'PATH_CONTROLLER' => realpath(dirname(__FILE__).'/../../') . '/application/controller/',
 	'PATH_VIEW' => realpath(dirname(__FILE__).'/../../') . '/application/view/',
+	'PATH_JAVASCRIPT' => realpath(dirname(__FILE__).'/../../') . '/application/javascript/',
+	'PATH_CSS' => realpath(dirname(__FILE__).'/../../') . '/public/css/',
 	/**
 	 * Configuration for: Avatar paths
 	 * Internal path to save avatars. Make sure this folder is writable. The slash at the end is VERY important!
@@ -62,7 +64,7 @@ return array(
 	 * DB_CHARSET The charset, necessary for security reasons. Check Database.php class for more info.
 	 */
 	'DB_TYPE' => 'mysql',
-	'DB_HOST' => '127.0.0.1',
+	'DB_HOST' => 'localhost',
 	'DB_NAME' => 'huge',
 	'DB_USER' => 'root',
 	'DB_PASS' => '',
