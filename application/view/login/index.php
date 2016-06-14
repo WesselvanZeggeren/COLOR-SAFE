@@ -1,5 +1,5 @@
 		<main>
-			<article class="login-article login-article-login">
+			<section class="login-section login-section-login">
 				<h2 class="login-title login-title-login">Login</h2>
 				<form method="post" action="<?php echo Config::get('URL'); ?>login/login" >
 					<input type="text" name="user_name" placeholder="Your username or email" class="login-input" required ><br>
@@ -14,8 +14,8 @@
                     <input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" >
                     <input type="submit" value="Log in" class="login-input-submit">
 				</form>
-			</article><br>
-			<article class="login-article login-article-register">
+			</section><br>
+			<section class="login-section login-section-register">
 				<h2 class="login-title login-title-register">
 					Retarded enough to forget both the password of this site and your mail?<br>
 					Way to popular to use your original account?<br>
@@ -23,5 +23,5 @@
 					You've come to the right place make your ( new ) account here!
 				</h2>
 				<a href="<?php echo Config::get('URL'); ?>register/index" ><button class="login-button">sign up now!</button></a>
-			</article>
+			</section>
 		</main>

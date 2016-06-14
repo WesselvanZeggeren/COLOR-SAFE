@@ -4,7 +4,7 @@
  * CreateController
  * users can create their own color here
  */
-class CreateController extends Controller
+class ColorController extends Controller
 {
 
 	public function __construct() 
@@ -14,11 +14,17 @@ class CreateController extends Controller
 
 	public function index()
 	{
-		$this->View->render('create/index');
+		$this->View->render('color/index');
 	}
 
 	public function edit()
 	{
 		$this->View->render('topRated/edit');
 	}
+
+	public function addColor()
+	{
+		
+	}
+	
 }

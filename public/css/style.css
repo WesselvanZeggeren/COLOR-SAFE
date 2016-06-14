@@ -20,7 +20,7 @@ html{
 	overflow-x: hidden;
 }
 
-html, body, li, ul, a, header, main, .home-button-box, .home-button{
+html, body, li, ul, a, header, main, .home-button-box, .home-button, p{
 	margin: 0;
 	padding: 0;
 }
@@ -39,14 +39,23 @@ main{
 	text-align: center;
 }
 
-header{
-	position: absolute;
-	top: 0;
+header, footer{
 	width: 100%;
 	height: 70px;
 	background-color: #0f0f0f;
 	border: none;
 	box-shadow: 0 3px 50px #000000;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	box-shadow: 0 3px 50px #000000;
+}
+
+footer{
+	bottom: calc(0 + 70px);
+	box-shadow: 0 -3px 50px #000000;
 }
 
 button{
@@ -55,10 +64,16 @@ button{
 
 a{
 	text-decoration: none;
+	display: block;
 }
 
-li, a{
+li, p{
 	display: inline-block; 
+}
+
+p{
+	min-width: 130px;
+	padding-right: 5px;
 }
 
 /**
@@ -69,7 +84,7 @@ li, a{
  * Style of the title and its letters
  */
 
-.title, .nav-button-left, .nav-button-right{
+.title, .nav-button-left, .nav-button-right, .footer-text, .nav-right-p{
 	margin: 0;
 	color: #dfdfdf;
 	font-family: 'Kanit', sans-serif;
@@ -151,12 +166,15 @@ li, a{
  * Style of the right nav and its buttons
  */
 
+.nav-right-p{
+	transform: translateY(4px);
+}
+
 .nav-button-right{
 	background-color: #2f2f2f;
 	height: 40px;
 	margin-left: calc(10px + 2px);
 	margin-right: calc(-5px + 1px);
-	margin-top: calc(10px + 2px);
 	border: 3px solid #dfdfdf;
 	box-shadow: 0 5px #3f3f3f;
 	border-radius: 1px;
@@ -164,6 +182,7 @@ li, a{
 }
 
 .nav-button-right-normal{
+	margin-top: calc(10px + 2px);
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: calc(5px - 1px);
@@ -171,8 +190,8 @@ li, a{
 
 .nav-button-right-image{
 	width: 40px;
-	transform: translateY(10px);
-	margin-top: calc(-10px - 2px);
+	transform: translateY(12px);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-button-right:hover{
@@ -188,6 +207,8 @@ li, a{
  * Style of the footer and its text
  */
 
+
+
 /**
  * Style of the Home page
  */
@@ -200,7 +221,7 @@ li, a{
 	width: calc(800px + 28px);
 }
 
-.home-button{
+.home-button, .color-section{
 	background-color: #dfdfdf;
 	height: 200px;
 	width: calc(250px + 3px);
@@ -246,10 +267,10 @@ li, a{
 }
 
 /**
- * Style of the login page and its articles
+ * Style of the login page and its sections
  */
 
-.login-article-login, .login-article-register{
+.login-section-login, .login-section-register{
 	border: 1px solid #ff0000;
 	display: inline-block;
 	margin: 5px;
@@ -257,13 +278,19 @@ li, a{
 	min-height: 300px;
 }
 
+/**
+ * Style of the create page and its buttons
+ */
 
+.color-section{
+	width: calc(780px + 1px);
+	height: 300px;
+	box-shadow: none;
+}
 
-
-
-
-
-
-
-
-
+.color-button{
+ 	height: 30px;
+	width: 200px;
+	background-color: #ff0000;
+	border: none;
+ }
