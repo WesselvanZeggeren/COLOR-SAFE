@@ -2,10 +2,11 @@ var object = [document.getElementById("color-1"), document.getElementById("color
 object[0].style.borderColor = "#000000"; 
 
 function setRangeColor(idRange) {
-	var red = 
-	var green = 
-	var blue = 
-	setData(red + green + blue);
+	console.log(document.getElementById("color-range-red").value.toString(16));
+	var red = 0;
+	var green = 0;
+	var blue = 0;
+	console.log(red + green + blue);
 }
 
 function selectThisColor(idButton) {
