@@ -221,7 +221,7 @@ p{
 	width: calc(800px + 28px);
 }
 
-.home-button, .color-section{
+.home-button{
 	background-color: #dfdfdf;
 	height: 200px;
 	width: calc(250px + 3px);
@@ -279,18 +279,55 @@ p{
 }
 
 /**
- * Style of the create page and its buttons
+ * Style of the create page and its buttons, labels and sections
  */
 
 .color-section{
-	width: calc(780px + 1px);
 	height: 300px;
 	box-shadow: none;
 }
 
+.color-label, .color-button, .color-text{
+	color: #0f0f0f;
+	font-family: 'Kanit', sans-serif;
+	display: inline-block;
+}
+
+.color-label{
+	font-size: 15px;
+}
+
+.color-label-left{
+	width: 150px;
+	text-align: right;
+}
+
+.color-label-right{
+	width: 150px;
+	text-align: left;
+}
+
+.color-text-hex{
+	width: 450px;
+}
+
+.color-label-#{
+	font-weight: 900;
+	text-size: 20px;
+}
+
+.color-p{
+	display: none;
+}
+
 .color-button{
- 	height: 30px;
-	width: 200px;
-	background-color: #ff0000;
-	border: none;
- }
+	margin: 5px;
+ 	height: 3s0px;
+	width: 250px;
+	background-color: #ffffff;
+	border: 3px solid #000000;
+}
+
+.color-range{
+	width: 700px;
+}
